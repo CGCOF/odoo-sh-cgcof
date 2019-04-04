@@ -1,0 +1,4 @@
+[submodule "aselcis/cgcof_contact_fields"]
+	path = aselcis/cgcof_contact_fields
+	url = git@github.com:Aselcis-Consulting/cgcof_contact_fields.git
+	branch = 12.0
