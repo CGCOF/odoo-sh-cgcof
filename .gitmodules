@@ -2,3 +2,7 @@
 	path = aselcis/cgcof_contact_fields
 	url = git@github.com:Aselcis-Consulting/cgcof_contact_fields.git
 	branch = 12.0
+[submodule "aselcis/account_invoice_collegiate"]
+	path = aselcis/account_invoice_collegiate
+	url = git@github.com:Aselcis-Consulting/account_invoice_collegiate.git
+	branch = 12.0
