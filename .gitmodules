@@ -6,3 +6,7 @@
 	path = aselcis/account_invoice_collegiate
 	url = git@github.com:Aselcis-Consulting/account_invoice_collegiate.git
 	branch = 12.0
+[submodule "aselcis/product_collegiate_premium"]
+	path = aselcis/product_collegiate_premium
+	url = git@github.com:Aselcis-Consulting/product_collegiate_premium.git
+	branch = 12.0
