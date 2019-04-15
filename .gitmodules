@@ -10,3 +10,8 @@
 	path = aselcis/product_collegiate_premium
 	url = git@github.com:Aselcis-Consulting/product_collegiate_premium.git
 	branch = 12.0
+
+[submodule "OCA/l10n-spain"]
+	path = OCA/l10n-spain
+	url = git@github.com:OCA/l10n-spain.git
+	branch = 12.0
