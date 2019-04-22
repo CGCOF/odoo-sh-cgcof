@@ -27,3 +27,8 @@
 	path = OCA/account-payment
 	url = git@github.com:OCA/account-payment.git
 	branch = 12.0
+
+[submodule "OCA/queue"]
+	path = OCA/queue
+	url = git@github.com:OCA/queue.git
+	branch = 12.0
