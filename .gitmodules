@@ -75,3 +75,7 @@
 	path = OCA/community-data-files
 	url = git@github.com:OCA/community-data-files.git
 	branch = 12.0
+[submodule "aselcis/cgcof_product_fields"]
+	path = aselcis/cgcof_product_fields
+	url = git@github.com:Aselcis-Consulting/cgcof_product_fields.git
+	branch = 12.0
