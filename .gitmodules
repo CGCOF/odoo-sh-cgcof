@@ -1,11 +1,3 @@
-[submodule "aselcis/cgcof_contact_fields"]
-	path = aselcis/cgcof_contact_fields
-	url = git@github.com:Aselcis-Consulting/cgcof_contact_fields.git
-	branch = 12.0
-[submodule "aselcis/account_invoice_collegiate"]
-	path = aselcis/account_invoice_collegiate
-	url = git@github.com:Aselcis-Consulting/account_invoice_collegiate.git
-	branch = 12.0
 [submodule "OCA/l10n-spain"]
 	path = OCA/l10n-spain
 	url = git@github.com:OCA/l10n-spain.git
@@ -69,10 +61,6 @@
 [submodule "OCA/community-data-files"]
 	path = OCA/community-data-files
 	url = git@github.com:OCA/community-data-files.git
-	branch = 12.0
-[submodule "aselcis/cgcof_product_fields"]
-	path = aselcis/cgcof_product_fields
-	url = git@github.com:Aselcis-Consulting/cgcof_product_fields.git
 	branch = 12.0
 [submodule "aselcis/cgcof"]
 	path = aselcis/cgcof
