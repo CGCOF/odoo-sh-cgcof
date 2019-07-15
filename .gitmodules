@@ -69,5 +69,5 @@
 
 [submodule "OCA/account-analytic"]
 	path = OCA/account-analytic
-	url = git@github.com:OCA/account-analytic.git
-	branch = 6.1
+	url = https://github.com/OCA/account-analytic.git
+	branch = 12.0
