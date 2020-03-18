@@ -71,3 +71,8 @@
 	path = OCA/account-analytic
 	url = https://github.com/OCA/account-analytic.git
 	branch = 12.0
+
+[submodule "aselcis/server-tools"]
+	path = aselcis/server-tools
+	url = git@github.com:Aselcis-Consulting/server-tools.git
+	branch = 12.0
