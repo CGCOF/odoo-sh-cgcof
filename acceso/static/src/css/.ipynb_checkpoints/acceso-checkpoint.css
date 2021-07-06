@@ -7,7 +7,7 @@
     align-items: center;
 }
 #cont-izq-img{
-    background: url(https://danielguerracarrascosa-doce-user-comprobar-2814509.dev.odoo.com/acceso/static/src/img/acceso_1.jpg) no-repeat 0 0 white;
+    background: url(/acceso/static/src/img/acceso_1.jpg) no-repeat 0 0 white;
     background-size: cover;
     position: relative;
     height: 100vh;
