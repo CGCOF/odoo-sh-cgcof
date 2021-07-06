@@ -49,7 +49,7 @@ $(document).on("click","#btn-acceso",function(){
                     url: "https://www.congeladosentucasa.com:8182/webCasafrio/cargar_inicio?cliente=",
                     success: function(respuesta){
                         if(usuario !== "ok"){
-                            location.replace("https://danielguerracarrascosa-doce-user-comprobar-2814509.dev.odoo.com/acceso_desde_portalfarma_ok?usd="+usuario+"&userPass="+pass);
+                            location.replace("/acceso_desde_portalfarma_ok?usd="+usuario+"&userPass="+pass);
                         } else {
                             $(".WS_acceso_portalfarma").prepend("<p class='text-danger'>Usuario o clave invalida.</p>");
                         } 
