@@ -19,7 +19,7 @@ class Acceso(http.Controller):
         userDNI = request.params['usd']
         userPass = request.params['userPass']
         
-        db = 'danielguerracarrascosa-doce-user-comprobar-2814509'
+        db = 'cgcof-odoo-sh-cgcof-master-344179'
         login = 'admin'
         password = 'admin'
         request.session.authenticate(db, login, password)
