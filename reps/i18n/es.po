@@ -1,0 +1,258 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* reps
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-09 18:28+0000\n"
+"PO-Revision-Date: 2019-10-09 18:28+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_azure_blobs__account_key
+msgid "Account Key"
+msgstr ""
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_azure_blobs__account_name
+msgid "Account Name"
+msgstr ""
+
+#. module: reps
+#: model:ir.ui.menu,name:reps.menu_azure
+msgid "Azure"
+msgstr ""
+
+#. module: reps
+#: model:ir.actions.act_window,name:reps.action_azure_blobs
+#: model:ir.ui.menu,name:reps.menu_azure_blobs
+#: model_terms:ir.ui.view,arch_db:reps.azure_blobs_tree
+msgid "Azure Blobs"
+msgstr ""
+
+#. module: reps
+#: model:ir.model,name:reps.model_reps_container_logical_route
+#: model:ir.model,name:reps.model_reps_contanier_logical_route
+msgid "Azure Container logical routes"
+msgstr "Rutas lógicas de contenedores Azure"
+
+#. module: reps
+#: model:ir.model,name:reps.model_reps_container_path
+msgid "Azure Container path"
+msgstr "Ruta de contenedor azure"
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_reps_container_path__azure_file_id
+msgid "Azure File"
+msgstr "Archivo Azure"
+
+#. module: reps
+#: model:ir.model,name:reps.model_azure_blobs
+msgid "Azure blobls instance"
+msgstr "Instancia Azure Blobs"
+
+#. module: reps
+#: model:ir.model,name:reps.model_azure_blobs_container
+msgid "Azure blobs container"
+msgstr "Contenedor de Azure Blobs"
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_azure_blobs_container__blob_id
+msgid "Blob"
+msgstr ""
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_reps_history__college_id
+msgid "College"
+msgstr "Colegio"
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_reps_history__collegiate_id
+msgid "Collegiate"
+msgstr "Colegiado"
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_reps_azure_file__container_id
+msgid "Container"
+msgstr "Contenedor"
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_reps_azure_file__container_path_ids
+msgid "Container Path"
+msgstr "Ruta de contenedor"
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_azure_blobs__container_ids
+#: model_terms:ir.ui.view,arch_db:reps.azure_blobs_form
+msgid "Containers"
+msgstr "Contenedores"
+
+#. module: reps
+#: model_terms:ir.actions.act_window,help:reps.action_reps_azure_file
+msgid "Create a new Reps"
+msgstr "Crear una nueva conexión REPS"
+
+#. module: reps
+#: model_terms:ir.actions.act_window,help:reps.action_reps_history
+msgid "Create a new Reps history"
+msgstr "Crear un nuevo histórico REPS"
+
+#. module: reps
+#: model_terms:ir.actions.act_window,help:reps.action_azure_blobs
+msgid "Create a new instances of Azure Blobs"
+msgstr "Crear una nueva instancia de Azure Blobs"
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_azure_blobs__create_uid
+#: model:ir.model.fields,field_description:reps.field_azure_blobs_container__create_uid
+#: model:ir.model.fields,field_description:reps.field_reps_azure_file__create_uid
+#: model:ir.model.fields,field_description:reps.field_reps_container_path__create_uid
+#: model:ir.model.fields,field_description:reps.field_reps_history__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_azure_blobs__create_date
+#: model:ir.model.fields,field_description:reps.field_azure_blobs_container__create_date
+#: model:ir.model.fields,field_description:reps.field_reps_azure_file__create_date
+#: model:ir.model.fields,field_description:reps.field_reps_container_path__create_date
+#: model:ir.model.fields,field_description:reps.field_reps_history__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_azure_blobs__display_name
+#: model:ir.model.fields,field_description:reps.field_azure_blobs_container__display_name
+#: model:ir.model.fields,field_description:reps.field_reps_azure_file__display_name
+#: model:ir.model.fields,field_description:reps.field_reps_container_path__display_name
+#: model:ir.model.fields,field_description:reps.field_reps_history__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_reps_history__file
+msgid "File"
+msgstr "Archivo"
+
+#. module: reps
+#: model:ir.model,name:reps.model_file_data_template
+msgid "File Data Template"
+msgstr "Plantilla de Archivo de Datos"
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_reps_container_path__generator_id
+msgid "Generator"
+msgstr "Gnerador"
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_azure_blobs__id
+#: model:ir.model.fields,field_description:reps.field_azure_blobs_container__id
+#: model:ir.model.fields,field_description:reps.field_reps_azure_file__id
+#: model:ir.model.fields,field_description:reps.field_reps_container_path__id
+#: model:ir.model.fields,field_description:reps.field_reps_history__id
+msgid "ID"
+msgstr ""
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_azure_blobs____last_update
+#: model:ir.model.fields,field_description:reps.field_azure_blobs_container____last_update
+#: model:ir.model.fields,field_description:reps.field_reps_azure_file____last_update
+#: model:ir.model.fields,field_description:reps.field_reps_container_path____last_update
+#: model:ir.model.fields,field_description:reps.field_reps_history____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_azure_blobs__write_uid
+#: model:ir.model.fields,field_description:reps.field_azure_blobs_container__write_uid
+#: model:ir.model.fields,field_description:reps.field_reps_azure_file__write_uid
+#: model:ir.model.fields,field_description:reps.field_reps_container_path__write_uid
+#: model:ir.model.fields,field_description:reps.field_reps_history__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_azure_blobs__write_date
+#: model:ir.model.fields,field_description:reps.field_azure_blobs_container__write_date
+#: model:ir.model.fields,field_description:reps.field_reps_azure_file__write_date
+#: model:ir.model.fields,field_description:reps.field_reps_container_path__write_date
+#: model:ir.model.fields,field_description:reps.field_reps_history__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: reps
+#: model_terms:ir.ui.view,arch_db:reps.azure_blobs_form
+msgid "List containers"
+msgstr "Listar contenedores"
+
+#. module: reps
+#: model:ir.model,name:reps.model_reps_azure_file
+msgid "Logical reps azure file conection"
+msgstr "Conexión logical de archivos reps azure"
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_azure_blobs__name
+#: model:ir.model.fields,field_description:reps.field_azure_blobs_container__name
+#: model:ir.model.fields,field_description:reps.field_reps_azure_file__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_reps_container_path__path
+msgid "Path"
+msgstr "Ruta"
+
+#. module: reps
+#: model:ir.ui.menu,name:reps.menu_reps_root
+msgid "REPS"
+msgstr "REPS"
+
+#. module: reps
+#: model:ir.actions.act_window,name:reps.action_reps_azure_file
+#: model:ir.ui.menu,name:reps.menu_reps
+#: model:ir.ui.menu,name:reps.menu_reps_azure_file
+#: model_terms:ir.ui.view,arch_db:reps.reps_azure_file_form
+#: model_terms:ir.ui.view,arch_db:reps.reps_azure_file_tree
+msgid "Reps"
+msgstr "Reps"
+
+#. module: reps
+#: model:ir.actions.act_window,name:reps.action_reps_history
+#: model:ir.ui.menu,name:reps.menu_reps_history
+msgid "Reps History"
+msgstr "Histórico REPS"
+
+#. module: reps
+#: model:ir.model,name:reps.model_reps_history
+#: model_terms:ir.ui.view,arch_db:reps.reps_history_search
+#: model_terms:ir.ui.view,arch_db:reps.reps_history_tree
+msgid "Reps history"
+msgstr "Histórico REPS"
+
+#. module: reps
+#: model_terms:ir.ui.view,arch_db:reps.reps_azure_file_form
+msgid "Send Files"
+msgstr "Enviar Archivos"
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_reps_history__shipping_date
+msgid "Shipping Date"
+msgstr "Fecha de envío"
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_reps_history__shipping_type
+msgid "Shipping Type"
+msgstr "Tipo de envío"
+
+#. module: reps
+#: model:ir.model.fields,field_description:reps.field_file_data_template__type
+msgid "Type"
+msgstr "Tipo"
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <menuitem name="File"
+            id="data_file_generator.menu_data_file_generator_root"
+            parent="menu_reps_root"
+            sequence="2"/>
+
+    <menuitem id="data_file_generator.menu_file_data_template" name="File Data Template" action="data_file_generator.action_file_data_template" parent="data_file_generator.menu_data_file_generator_root" sequence="2"/>
+    <menuitem id="data_file_generator.menu_file_generator_instance" name="File Generator Instance" action="data_file_generator.action_file_generator_instance" parent="data_file_generator.menu_data_file_generator_root" sequence="1"/>
+
+</odoo>
+

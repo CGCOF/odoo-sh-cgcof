@@ -1,0 +1,210 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* product_collegiate_premium
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-29 16:15+0000\n"
+"PO-Revision-Date: 2020-12-29 17:19+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_product_product__premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_product_template__premium
+msgid "Premium"
+msgstr ""
+
+#. module: product_collegiate_premium
+#: model:ir.model,name:product_collegiate_premium.model_product_template
+msgid "Product Template"
+msgstr ""
+
+#. module: product_collegiate_premium
+#: model:ir.model,name:product_collegiate_premium.model_website
+msgid "Website"
+msgstr ""
+
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* product_collegiate_premium
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-13 14:21+0000\n"
+"PO-Revision-Date: 2020-05-13 14:21+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_collegiate_premium
+#: model_terms:ir.ui.view,arch_db:product_collegiate_premium.alert_product_remove
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_res_config_settings__college_pricelist
+msgid "College dynamic pricelist"
+msgstr "Lista de precios dinámica en colegios"
+
+#. module: product_collegiate_premium
+#: model:ir.model,name:product_collegiate_premium.model_res_collegiate
+msgid "Collegiate"
+msgstr "Colegiado"
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_res_config_settings__collegiate_pricelist
+msgid "Collegiate dynamic pricelist"
+msgstr "Lista de precios dinámica en colegiados"
+
+#. module: product_collegiate_premium
+#: model:ir.model,name:product_collegiate_premium.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: product_collegiate_premium
+#: model:ir.model,name:product_collegiate_premium.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_sale_order_product_remove__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_sale_order_product_remove__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_sale_order_product_remove__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_sale_order_product_remove__id
+msgid "ID"
+msgstr ""
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_sale_order_product_remove____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_sale_order_product_remove__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_sale_order_product_remove__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_product_product__premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_product_template__premium
+msgid "Premium"
+msgstr ""
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_res_config_settings__disabled_pricelist_id
+msgid "Pricelist to disabled collegiates"
+msgstr "Lista de precios para colegiados deshabilitada"
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_res_config_settings__college_pricelist_id
+msgid "Pricelist to enabled colleges"
+msgstr "Lista de precios para colegios habilitada"
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_res_config_settings__enabled_pricelist_id
+msgid "Pricelist to enabled collegiates"
+msgstr "Lista de precios para colegiados habilitada"
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_sale_order_product_remove__product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: product_collegiate_premium
+#: model:ir.model,name:product_collegiate_premium.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: product_collegiate_premium
+#: model:ir.model.fields,field_description:product_collegiate_premium.field_sale_order__remove_product_ids
+msgid "Remove Product"
+msgstr "Eliminar producto"
+
+#. module: product_collegiate_premium
+#: model:ir.model,name:product_collegiate_premium.model_sale_order
+msgid "Sale Order"
+msgstr "Pedido de venta"
+
+#. module: product_collegiate_premium
+#: model_terms:ir.ui.view,arch_db:product_collegiate_premium.res_config_settings_product_premium_view_form
+msgid "Set a default pricelist for colleges"
+msgstr "Establecer una lista de precios por defecto para colegios"
+
+#. module: product_collegiate_premium
+#: model_terms:ir.ui.view,arch_db:product_collegiate_premium.res_config_settings_product_premium_view_form
+msgid "Set a default pricelist for disabled collegiates"
+msgstr "Establecer una lista de precios por defecto para colegiados deshabilitados"
+
+#. module: product_collegiate_premium
+#: model_terms:ir.ui.view,arch_db:product_collegiate_premium.res_config_settings_product_premium_view_form
+msgid "Set a dynamic product pricelist for colleges"
+msgstr "Establecer una lista de precios dinámica para colegios"
+
+#. module: product_collegiate_premium
+#: model_terms:ir.ui.view,arch_db:product_collegiate_premium.res_config_settings_product_premium_view_form
+msgid "Set a dynamic product pricelist for collegiates"
+msgstr "Establecer una lista de precios dinámica para colegiados"
+
+#. module: product_collegiate_premium
+#: model_terms:ir.ui.view,arch_db:product_collegiate_premium.alert_product_remove
+msgid "Some non-premium products have been <strong>removed</strong> from your cart:"
+msgstr "Algunos productos no premium han sido <strong>eliminados</strong> de tu carrito:"
+
+#. module: product_collegiate_premium
+#: model:ir.model,name:product_collegiate_premium.model_website
+msgid "Website"
+msgstr "Sitio web"
+
+#. module: product_collegiate_premium
+#: model:ir.model,name:product_collegiate_premium.model_sale_order_product_remove
+msgid "sale.order.product.remove"
+msgstr ""
+
+#. module: product_collegiate_premium
+#: code:addons/product_collegiate_premium/models/sale_order.py:4
+#, python-format
+msgid ""
+"\n"
+"A collegiate-type customer cannot purchase a non-premium product, \n"
+"so such products will be removed from the budget\n"
+msgstr ""
+"\n"
+"Un cliente de tipo colegiado no puede adquirir un producto no prémium, \n"
+"por lo que dichos productos serán eliminados del presupuesto.\n"
+
+#. module: product_collegiate_premium
+#: code:addons/product_collegiate_premium/models/sale_order.py:34
+#, python-format
+msgid "Restriction!"
+msgstr "¡ Restricción !"

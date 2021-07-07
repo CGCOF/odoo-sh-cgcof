@@ -1,0 +1,6 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+access_reps_history,reps.history,model_reps_history,"",1,1,1,1
+access_reps_azure_file,reps.azure.file,model_reps_azure_file,"",1,1,1,1
+access_reps_container_path,reps.container.path,model_reps_container_path,"",1,1,1,1
+access_azure_blobs,azure.blobs,model_azure_blobs,"",1,1,1,1
+access_azure_blobs_container,azure.blobs.container,model_azure_blobs_container,"",1,1,1,1

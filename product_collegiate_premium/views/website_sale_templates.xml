@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <template id="modal_cart_structure" inherit_id="website_sale.cart">
+        <xpath expr="//t[@t-call='website_sale.cart_lines']" position="before">
+            <t t-if="products2remove" t-call="product_collegiate_premium.alert_product_remove"/>
+        </xpath>
+    </template>
+</odoo>

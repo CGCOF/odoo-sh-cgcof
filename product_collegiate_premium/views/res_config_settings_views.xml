@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_product_premium_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.product.premium.view.form.inherit</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="sale.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@data-key='sale_management']/*[4]" position="inside">
+                <div class="col-12 col-lg-6 o_setting_box" title="Set a default pricelist for disabled collegiates">
+                    <div class="o_setting_left_pane">
+                        <field name="collegiate_pricelist"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="collegiate_pricelist"/>
+                        <div class="text-muted">
+                                Set a dynamic product pricelist for collegiates
+                        </div>
+                        <div class="content-group" attrs="{'invisible': [('collegiate_pricelist', '=', False)]}">
+                            <div class="mt16">
+                                <label for="enabled_pricelist_id" class="o_light_label"/>
+                                <field name="enabled_pricelist_id" class="oe_inline"/>
+                            </div>
+                            <div class="mt16">
+                                <label for="disabled_pricelist_id" class="o_light_label"/>
+                                <field name="disabled_pricelist_id" class="oe_inline"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box" title="Set a default pricelist for colleges">
+                    <div class="o_setting_left_pane">
+                        <field name="college_pricelist"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="college_pricelist"/>
+                        <div class="text-muted">
+                                Set a dynamic product pricelist for colleges
+                        </div>
+                        <div class="content-group" attrs="{'invisible': [('college_pricelist', '=', False)]}">
+                            <div class="mt16">
+                                <label for="college_pricelist_id" class="o_light_label"/>
+                                <field name="college_pricelist_id" class="oe_inline"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

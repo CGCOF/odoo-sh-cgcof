@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<odoo>
+    <template id="alert_product_remove">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            Some non-premium products have been <strong>removed</strong> from your cart:
+            <ul>
+                <li t-foreach="products2remove" t-as="product">
+                    <t t-esc="product"/>
+                </li>
+            </ul>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span>x</span>
+            </button>
+        </div>
+    </template>
+</odoo>

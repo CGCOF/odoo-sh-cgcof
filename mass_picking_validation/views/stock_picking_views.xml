@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Stock Picking Views -->
+    <record id="view_picking_form" model="ir.ui.view">
+        <field name="name">stock.picking.form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <field name="backorder_id" position="after">
+                <field name="reserved_percentage" widget="progressbar" attrs="{'invisible': [('state', 'in', ['draft', 'done', 'cancel'])]}"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="vpicktree" model="ir.ui.view">
+        <field name="name">stock.picking.tree</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.vpicktree"/>
+        <field name="arch" type="xml">
+            <field name="state" position="before">
+                <field name="reserved_percentage" widget="progressbar" attrs="{'invisible': [('state', 'in', ['draft', 'done', 'cancel'])]}"/>
+            </field>
+        </field>
+    </record>
+
+    <!--Server Actions -->
+    <record id="action_picking_check" model="ir.actions.server">
+        <field name="name">Check Availability</field>
+        <field name="model_id" ref="stock.model_stock_picking"/>
+        <field name="binding_model_id" ref="stock.model_stock_picking"/>
+        <field name="state">code</field>
+        <field name="code">action = model.action_assign()</field>
+    </record>
+
+    <record id="action_picking_validate" model="ir.actions.server">
+        <field name="name">Validate</field>
+        <field name="model_id" ref="stock.model_stock_picking"/>
+        <field name="binding_model_id" ref="stock.model_stock_picking"/>
+        <field name="state">code</field>
+        <field name="code">action = model.button_validate()</field>
+    </record>
+
+</odoo>
