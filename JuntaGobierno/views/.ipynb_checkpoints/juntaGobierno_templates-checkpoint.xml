@@ -1,6 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        
+        <template id="home_junta_gobierno" name="Home Junta de Gobierno">
+            <xpath expr="." position="inside">
+                <script 
+                    type="text/javascript" 
+                    src="https://code.jquery.com/jquery-latest.min.js">
+                 </script>
+                <script 
+                    type="text/javascript" 
+                    src="/acceso/static/src/js/juntaGobierno.js">
+                 </script>
+                 <link
+                    href="/acceso/static/src/css/juntaGobierno.css"
+                    rel="stylesheet" 
+                    type="text/css"/>
+            </xpath>
+            <t t-call="website.layout">
+                <div id="contenido">
+                    
+                    <h1>Gestión de Junta de Gobierno</h1>
+                    <p class="linea"></p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                    <div>
+                        <div>
+                            <label>Colegio Oficial Farmacéuticos
+                                <select>
+                                    <option selected="selected" disabled="disabled">Selecciona un colegio oficial</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div>
+                            <label>Estado
+                                <select>
+                                    <option selected="selected" disabled="disabled">Selecciona un estado</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div>
+                            <label>Fecha
+                                <input type="date" name="fecha"/>
+                            </label>
+                        </div>
+                        <div><button type="button" class="btn-submit">BUSCAR</button></div>
+                        <table>
+                            <caption>Resultado de la búsqueda</caption>
+                            <thead>
+                                <tr>
+                                    <th>Orden</th>
+                                    <th>Cargo JG</th>
+                                    <th>DNI</th>
+                                    <th>Nombre</th>
+                                    <th>Apellidos</th>
+                                    <th>ERP</th>
+                                    <th>Fecha Inicio</th>
+                                    <th>Fecha Final</th>
+                                    <th>
+                                        <input type="button" class="btn-submit" id="btn-new"/>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- for cargar lista -->
+                                <tr>
+                                    <td>1</td>
+                                    <td>Presidente</td>
+                                    <td>11111111A</td>
+                                    <td>Nombre</td>
+                                    <td>Apellidos</td>
+                                    <td>Sí</td>
+                                    <td>01/01/2021</td>
+                                    <td>01/01/2023</td>
+                                    <td>
+                                        <i class="fas fa-pencil-alt"/>
+                                        <i class="fas fa-trash-alt"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div id="cont-izq-img">
+                        <!--<img src="acceso/static/src/img/acceso_1.jpg"/>-->
+                        <div>
+                            <img src="acceso/static/src/img/logo_in.png" id="img-logo_in"/>
+                        </div>
+                    </div>
+                    <div id="cont-der-main">
+                        <h1>Acceso con claves de portalfarma</h1>
+                        <p>
+                            Bienvenido/a a Farmaceuticos.com. Por favor,
+                            <br/>
+                            introduce tus datos para acceder a tu zona privada de
+                            <br/>
+                            usuario.
+                        </p>
+                        <form class="WS_acceso_portalfarma" role="form" method="post" >
+                            <label>
+                                Usuario Portalfarma
+                                <input type="text" required="required" name="usuarioAcceso" placeholder="Escribe tu usuario. DNI/CIF" class="input">
+                                </input>
+                            </label>
+                            <label>
+                                Contraseña
+                                <input type="password" required="required" name="passwordAcceso" class="input">
+                                </input>
+                            </label>
+                            <p class="textMini">
+                                Para proceder a la creación de tu cuenta necesitamos acceder a los datos de contacto de colegiado (nombre, apellidos, dirección y teléfono). En caso de aceptación sus datos serán tratados entorno a la Política de privacidad C€
+                            </p>
+                            <label>
+                                <input type="checkbox" required="required" name="checkPrivacidadAcceso"/>
+                                He leído y acepto el tratamiento de mis datos conforme viene descrito en la Política de privacidad.
+                            </label>
+                            <button type="button" class="btn btn-primary" id="btn-acceso">INICIAR SESSIÓN</button>
+                        </form>
+                    </div>
+                </div>
+            </t>
+        </template>
     </data>           
 </odoo>
