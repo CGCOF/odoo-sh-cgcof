@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="action_gestion_junta_gobierno_tree" model="ir.ui.view">
+        <!-- vista lista: es la primera vista que tenemos cuando entramos al modulo -->
+        <record id="gestion_junta_gobierno_tree" model="ir.ui.view">
             <field name="name">cargos.colegio.tree</field>
             <field name="model">cargos.colegio</field>
             <field name="arch" type="xml">
                 <tree string = "Cargos Junta de Gobierno">
-                    <field name = "x_id_cargos"/>
+                    <field name = "x_cargos_jg"/>
                     <field name = "x_dni"/>
                     <field name = "x_nombre"/>
                     <field name = "x_apellidos"/>
@@ -14,6 +15,45 @@
                     <field name = "x_fechaI"/>
                     <field name = "x_fechaF"/>
                 </tree>
+            </field>
+        </record>
+        <!-- vista Form: es la  vista que tenemos cuando entramos para editar ó crear un registro -->
+        <record id="gestion_junta_gobierno_form" model="ir.ui.view">
+            <field name="name">cargos.colegio.form</field>
+            <field name="model">cargos.colegio</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name = "x_cargos_jg"/>
+                                <field name = "x_dni"/>
+                                <field name = "x_indicadorERP"/>
+                            </group>
+                            <group>
+                                <field name = "x_nombre"/>
+                                <field name = "x_apellidos"/>
+                                <field name = "x_fechaI"/>
+                                <field name = "x_fechaF"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="view_redirect_search" model="ir.ui.view">
+            <field name="name">website.redirect.search</field>
+            <field name="model">website.redirect</field>
+            <field name="arch" type="xml">
+                <search string="Search Redirect">
+                    <field name="url_from"/>
+                    <field name="url_to"/>
+
+                    <group string="Group By">
+                        <filter string="Redirection Type" name="group_by_type" domain="[]" context="{'group_by': 'type'}"/>
+                    </group>
+                </search>
             </field>
         </record>
 
@@ -30,7 +70,7 @@
                 </field>
         </record>
 
-        <menuitem id="gestion_junta_gobierno_root" name="Gestion Junta de Gobierno" sequence="0"/>
+        <menuitem id="gestion_junta_gobierno_root" name="Gestion Junta de Gobierno" sequence="10"/>
         <menuitem id="cargos_junta_gobierno" name="Cargos" parent="gestion_junta_gobierno_root" action="action_gestion_junta_gobierno"/>
     </data>
 </odoo>
