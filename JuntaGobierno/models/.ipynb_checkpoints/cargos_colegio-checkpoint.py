@@ -4,7 +4,9 @@ from odoo import models, api, fields
 
 class Cargos_Colegio(models.Model):
     _name = "cargos.colegio"
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = "Cargos Junta Gobierno Colegios"
+    _rec_name = 'x_nombre'
 
     x_id_cargos = fields.Integer(string="ID del Cargo")
     x_id_colegios = fields.Integer(string="ID del Colegio")
@@ -17,4 +19,3 @@ class Cargos_Colegio(models.Model):
     x_indicadorERP = fields.Boolean(string="Indicador ERP")
     x_fechaI = fields.Date(string="Fecha Inicio")
     x_fechaF = fields.Date(string="Fecha Fin")
-
