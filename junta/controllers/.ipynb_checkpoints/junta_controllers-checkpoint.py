@@ -8,8 +8,19 @@ class Junta(http.Controller):
     def carga_datos(self, **kw):
         
         user_id = request.params['user']
+        """
+        db = 'cgcof-odoo-sh-cgcof-dani-2906786'
+        login = 'admin'
+        password = 'admin'
+        request.session.authenticate(db, login, password)
         
-        return http.request.render('junta_gobierno',{})
+        colegio = http.request.env['res.college'].search([('collegiate', '=', user_id)])
+        
+        nombre_colegio = colegio.id
+        
+        return nombre_colegio
+        """
+        return http.request.render('junta.home_junta_gobierno',{})
     
     """
     @http.route('/acceso_desde_portalfarma_ko', auth='public', website=True)

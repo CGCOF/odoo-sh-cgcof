@@ -1,8 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <template id="junta_gobierno" name="Junta Gobierno">
-            <p>Hola</p>
+        <template id="home_junta_gobierno" name="Home Junta de Gobierno">
+            <xpath expr="." position="inside">
+                <script 
+                    type="text/javascript" 
+                    src="https://code.jquery.com/jquery-latest.min.js">
+                 </script>
+                <script 
+                    type="text/javascript" 
+                    src="/junta/static/src/js/junta.js">
+                 </script>
+                 <link
+                    href="/junta/static/src/css/junta.css"
+                    rel="stylesheet" 
+                    type="text/css"/>
+            </xpath>
+            <t t-call="website.layout">
+                <div id="contenido">
+                    
+                    <h1>Gestión de Junta de Gobierno</h1>
+                    <p class="linea"></p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                    <div>
+                        <div>
+                            <label>Colegio Oficial Farmacéuticos
+                                <select>
+                                    <option selected="selected" disabled="disabled">Selecciona un colegio oficial</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div>
+                            <label>Estado
+                                <select>
+                                    <option selected="selected" disabled="disabled">Selecciona un estado</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div>
+                            <label>Fecha
+                                <input type="date" name="fecha"/>
+                            </label>
+                        </div>
+                        <div><button type="button" class="btn-submit">BUSCAR</button></div>
+                        <table>
+                            <caption>Resultado de la búsqueda</caption>
+                            <thead>
+                                <tr>
+                                    <th>Orden</th>
+                                    <th>Cargo JG</th>
+                                    <th>DNI</th>
+                                    <th>Nombre</th>
+                                    <th>Apellidos</th>
+                                    <th>ERP</th>
+                                    <th>Fecha Inicio</th>
+                                    <th>Fecha Final</th>
+                                    <th>
+                                        <input type="button" class="btn-submit" id="btn-new"/>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- for cargar lista -->
+                                <tr>
+                                    <td>1</td>
+                                    <td>Presidente</td>
+                                    <td>11111111A</td>
+                                    <td>Nombre</td>
+                                    <td>Apellidos</td>
+                                    <td>Sí</td>
+                                    <td>01/01/2021</td>
+                                    <td>01/01/2023</td>
+                                    <td>
+                                        <i class="fas fa-pencil-alt"/>
+                                        <i class="fas fa-trash-alt"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </t>
         </template>
     </data>           
 </odoo>

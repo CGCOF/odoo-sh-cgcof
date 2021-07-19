@@ -1,29 +1,29 @@
 # -*- coding: utf-8 -*-
 
 {
-    "name": "junta",
+    'name': 'junta',
 
-    "summary": "Gestion de la Junta de Gobierno, Colegio Oficial de Farmacéuticos",
+    'summary': 'Gestion de la Junta de Gobierno, Colegio Oficial de Farmacéuticos',
 
-    "description": """Modulo CGF Juntas de Gobierno""",
+    'description': """Modulo CGF Juntas de Gobierno""",
 
-    "author": "vfperez",
+    'author': 'vfperez',
 
-    "website": "https://ampsoftware.com",
+    'website': 'https://ampsoftware.com',
 
-    "category": "Administration",
+    'category': 'Administration',
     
-    "version": "0.1",
+    'version': '0.1',
 
-    "depends": [
-        "base",
-        "mail",
-        "web",
-        "website",
+    'depends': [
+        'base',
+        'mail',
+        'web',
+        'website',
     ],
 
-    "data": [
-        "views/junta_templates.xml",
+    'data': [
+        'views/junta_templates.xml',
         
     ],
     'demo': [
