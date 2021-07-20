@@ -1,26 +1,17 @@
 *{
     font-size: 16px;
+    font-family: 'flama';
 }
-#contenido{
+section{
     margin: 0 5%;
 }
-#contenido h1 {
+h2 {
     font-size: 2.5em;
     line-height: 1.3em;
     padding-bottom: 5px;
-    font-family: 'flama';
+    font-family: 'flama-medium';
     color: #93C462;
     font-weight: normal;
-}
-#contenido h1::after{
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    content: "";
-    display: block;
-    width: 256px;
-    height: 4px;
-    background: #1D1D1B;
 }
 .cont-img{
     width: 50%;
@@ -48,4 +39,35 @@
 .btn:hover{
     color: white;
     background: #77A647;
+}
+table{
+    margin-bottom: 7rem;
+}
+table tbody tr td {
+    line-height: 1.3em;
+    padding: 10px;
+    color: #757575;
+    font-weight: normal;
+    font-size: 0.938em;
+}
+table thead tr th {
+    vertical-align: middle;
+    width: 200px;
+    color: #1D1D1B;
+    font-weight: 500;
+    font-size: 0.750em;
+    text-transform: uppercase;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    background: none;
+    line-height: 1.1em;
+}
+table tbody tr td:first-child {
+    font-weight: 500;
+    color: #1D1D1B;
+}
+p.linea{
+    height:1px;
+    background-color: black;
 }

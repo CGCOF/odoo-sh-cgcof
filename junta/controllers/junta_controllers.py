@@ -48,9 +48,10 @@ class Junta(http.Controller):
         
         
         """
-    @http.route('/junta_gobierno/<model("res.partner"):collegiate_id>', auth='public', website=True)
+    @http.route('/junta_gobierno/<model("res.partner"):collegiate_id>', auth='public', website=True, methods=['GET', 'POST'])
     def carga_datos(self, collegiate_id):
         return http.request.render('junta.home_junta_gobierno',{
             "collegiate": collegiate_id
         })
+        
         """

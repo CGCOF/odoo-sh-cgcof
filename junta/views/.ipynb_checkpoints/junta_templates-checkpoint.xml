@@ -15,16 +15,13 @@
                     href="/junta/static/src/css/junta.css"
                     rel="stylesheet" 
                     type="text/css"/>
-                <link rel="shortcut icon" 
-                      href="https://ingravidalabs.com/projects/farmaceuticos/icon/favicon.ico"/>
                 
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"/>
             </xpath>
              
             <t t-call="website.layout">
-                <div id="contenido">
-                    
-                    <h1>Gestión de Junta de Gobierno</h1>
+                <section id="cont-inicio">
+                    <h2>Gestión de Junta de Gobierno</h2>
                     <p class="linea"></p>
                     
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -34,7 +31,6 @@
                             <p>Colegio: <span t-esc="persona.collegiate_number"></span></p>
                         </div>
                         <table class="table table-striped">
-                            <caption>Resultado de la búsqueda</caption>
                             <thead>
                                 <tr>
                                     <th>Orden</th>
@@ -52,47 +48,121 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>1</td>
-                                    <td>Presidente</td>
-                                    <td>11111111A</td>
-                                    <td>Nombre</td>
-                                    <td>Apellidos</td>
-                                    <td>Sí</td>
-                                    <td>01/01/2021</td>
-                                    <td>01/01/2023</td>
+                                    <td class="orden">1</td>
+                                    <td class="cargo">Presidente</td>
+                                    <td class="dni">11111111A</td>
+                                    <td class="nombre">Nombre</td>
+                                    <td class="apellido">Apellidos</td>
+                                    <td class="erp">Sí</td>
+                                    <td class="fecha_inicio">01/01/2021</td>
+                                    <td class="fecha_final">01/02/2023</td>
                                     <td>
-                                        <div class="cont-img">
-                                            <img class="edit"/>
+                                        <div class="cont-img edit">
+                                            <img class="edit" href="junta/static/src/img/edit.png"/>
                                         </div>
-                                        <div class="cont-img">
-                                            <img class="delete"/>
+                                        <div class="cont-img delete">
+                                            <img class="delete" href="junta/static/src/img/delete.png"/>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>Vice Presidente</td>
-                                    <td>22222222A</td>
-                                    <td>Nombre</td>
-                                    <td>Apellidos</td>
-                                    <td>No</td>
-                                    <td>01/01/2021</td>
-                                    <td>01/01/2023</td>
+                                    <td class="orden">2</td>
+                                    <td class="cargo">Vice Presidente</td>
+                                    <td class="dni">22222A</td>
+                                    <td class="nombre">Nombre</td>
+                                    <td class="apellido">Apellidos</td>
+                                    <td class="erp">No</td>
+                                    <td class="fecha_inicio">01/02/2021</td>
+                                    <td class="fecha_final">01/03/2023</td>
                                     <td>
-                                        <div class="cont-img">
-                                            <img class="edit" href="/static/src/img/edit.png"/>
+                                        <div class="cont-img edit">
+                                            <img class="edit" href="junta/static/src/img/edit.png"/>
                                         </div>
-                                        <div class="cont-img">
-                                            <img class="delete" href="/static/src/img/delete.png"/>
+                                        <div class="cont-img delete">
+                                            <img class="delete" href="junta/static/src/img/delete.png"/>
                                         </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                </section>
+                
+                <section id="cont-edit">
+                    <h2>Editar Cargo - Junta de Gobierno</h2>
+                    <p class="linea"></p>
                     
-                </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                    <div class="form-group">
+                        <label>Cargo <input type="text" name="cargo"/></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Nombre <input type="text" name="nombre"/></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Apellidos <input type="text" name="apellidos"/></label>
+                    </div>
+                    <div class="form-group">
+                        <label>DNI <input type="text" name="dni"/></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Fecha Inicio <input type="date" name="fecha_inicio"/></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Fecha Final <input type="date" name="fecha_final"/></label>
+                    </div>
+                    <div class="form-group">
+                        <p>Cuenta con acceso al ERP</p>
+                        <label>Sí <input type="radio" name="erp" value="Sí"/></label>
+                        <label>No <input type="radio" name="erp" value="No"/></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Orden <input type="number" name="orden" t-esc="orden"/></label>
+                        <small class="form-text text-muted">Número de posición en la lista.</small>
+                    </div>
+                    <button type="button" class="btn" id="cancela-edit">Cancelar</button>
+                    <button type="button" class="btn" id="guarda-edit">Guardar</button>
+                </section>
+                
+                <section id="cont-new">
+                    <h2>Nuevo Cargo - Junta de Gobierno</h2>
+                    <p class="linea"></p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                    <div class="form-group">
+                        <label>Cargo <input type="text" name="cargo"/></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Nombre <input type="text" name="nombre"/></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Apellidos <input type="text" name="apellidos"/></label>
+                    </div>
+                    <div class="form-group">
+                        <label>DNI <input type="text" name="dni"/></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Fecha Inicio <input type="date" name="fecha_inicio"/></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Fecha Final <input type="date" name="fecha_final"/></label>
+                    </div>
+                    <div class="form-group">
+                        <p>Cuenta con acceso al ERP</p>
+                        <label>Sí <input type="radio" name="erp"/></label>
+                        <label>No <input type="radio" name="erp"/></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Orden <input type="number" name="orden" t-esc="orden"/></label>
+                        <small class="form-text text-muted">Número de posición en la lista.</small>
+                    </div>
+                    <button type="button" class="btn" id="cancela-new">Cancelar</button>
+                    <button type="button" class="btn" id="guarda-new">Guardar</button>
+                </section>
             </t>
         </template>
+        
     </data>           
 </odoo>
