@@ -58,10 +58,10 @@
                                     <td class="fecha_final">01/02/2023</td>
                                     <td>
                                         <div class="cont-img edit">
-                                            <img class="edit" href="junta/static/src/img/edit.png"/>
+                                            <img class="edit" src="junta/static/src/img/edit.png"/>
                                         </div>
                                         <div class="cont-img delete">
-                                            <img class="delete" href="junta/static/src/img/delete.png"/>
+                                            <img class="delete" src="junta/static/src/img/delete.png"/>
                                         </div>
                                     </td>
                                 </tr>
@@ -76,10 +76,10 @@
                                     <td class="fecha_final">01/03/2023</td>
                                     <td>
                                         <div class="cont-img edit">
-                                            <img class="edit" href="junta/static/src/img/edit.png"/>
+                                            <img class="edit" src="junta/static/src/img/edit.png"/>
                                         </div>
                                         <div class="cont-img delete">
-                                            <img class="delete" href="junta/static/src/img/delete.png"/>
+                                            <img class="delete" src="junta/static/src/img/delete.png"/>
                                         </div>
                                     </td>
                                 </tr>
@@ -118,7 +118,7 @@
                         <label>No <input type="radio" name="erp" value="No"/></label>
                     </div>
                     <div class="form-group">
-                        <label>Orden <input type="number" name="orden" t-esc="orden"/></label>
+                        <label>Orden <input type="number" name="orden"/></label>
                         <small class="form-text text-muted">Número de posición en la lista.</small>
                     </div>
                     <button type="button" class="btn" id="cancela-edit">Cancelar</button>
@@ -155,7 +155,7 @@
                         <label>No <input type="radio" name="erp"/></label>
                     </div>
                     <div class="form-group">
-                        <label>Orden <input type="number" name="orden" t-esc="orden"/></label>
+                        <label>Orden <input type="number" name="orden"/></label>
                         <small class="form-text text-muted">Número de posición en la lista.</small>
                     </div>
                     <button type="button" class="btn" id="cancela-new">Cancelar</button>
