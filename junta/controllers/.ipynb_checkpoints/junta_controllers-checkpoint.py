@@ -4,47 +4,53 @@ from odoo import http
 from odoo.http import request
 
 class Junta(http.Controller):
+    
     @http.route('/junta_gobierno', auth='public', website=True)
     def carga_datos(self, **kw):
+        user = request.params['user']
         
-        user_id = request.params['user']
-        """
-        db = 'cgcof-odoo-sh-cgcof-dani-2906786'
-        login = 'admin'
+        db = 'cgcof-odoo-sh-cgcof-dani-2907548'
+        login = 'pruebasD@email.com'
         password = 'admin'
         request.session.authenticate(db, login, password)
         
-        colegio = http.request.env['res.college'].search([('collegiate', '=', user_id)])
+        persona = http.request.env['res.college.collegiate'].search([('collegiate_id', '=', user)])
         
-        nombre_colegio = colegio.id
+        return http.request.render('junta.home_junta_gobierno',{
+            "persona": persona
+        })
         
-        return nombre_colegio
         """
-        return http.request.render('junta.home_junta_gobierno',{})
-    
-    """
-    @http.route('/acceso_desde_portalfarma_ko', auth='public', website=True)
-    def acceso_ko(self, **kw):
+        - si sirve pero no muestra nombre del colegio
+        persona = http.request.env['res.college.collegiate'].search([('collegiate_id', '=', user)])
+        colegio = persona.ds_soe
+        numPersona = persona.collegiate_number
         
-        return http.request.render('acceso.acceso_desde_portalfarma_ko',{})
-    
-    @http.route('/acceso_desde_portalfarma_ok', auth='public', website=True)
-    def acceso_ok(self, **kw):
+        - si sirve SIII -
+        persona = http.request.env['res.collegiate'].search([('partner_id', '=', user)])
+        colegio = persona.name
         
-        userDNI = request.params['usd']
-        userPass = request.params['userPass']
+        - no accede -
+        colegio = persona.college_id
         
-        db = '(danielguerracarrascosa-doce-main-2743393'
-        login = 'admin'
-        password = 'admin'
-        request.session.authenticate(db, login, password)
+        """
         
-        user = http.request.env['res.users'].search([('login', '=', userDNI)])
-        id_user = user.id
+        return colegio
         
-        user = http.request.env['res.users'].browse(id_user)
-        user.password = userPass
-        http.request.env.cr.commit()
+        """
+        persona = http.request.env['res.partner'].search([('collegiate_id', '=', user)])
         
-        return http.request.render('acceso.cuenta_recuperada_portalfarma',{'dni':userDNI})
+        -- no puede acceder a propiedad del objeto --
+        nombre_persona = persona.collegiate_id
+        
+        return nombre_persona        
+        """
+        
+        
+        """
+    @http.route('/junta_gobierno/<model("res.partner"):collegiate_id>', auth='public', website=True)
+    def carga_datos(self, collegiate_id):
+        return http.request.render('junta.home_junta_gobierno',{
+            "collegiate": collegiate_id
+        })
         """

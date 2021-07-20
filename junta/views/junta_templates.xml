@@ -15,7 +15,12 @@
                     href="/junta/static/src/css/junta.css"
                     rel="stylesheet" 
                     type="text/css"/>
+                <link rel="shortcut icon" 
+                      href="https://ingravidalabs.com/projects/farmaceuticos/icon/favicon.ico"/>
+                
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"/>
             </xpath>
+             
             <t t-call="website.layout">
                 <div id="contenido">
                     
@@ -26,26 +31,9 @@
                     
                     <div>
                         <div>
-                            <label>Colegio Oficial Farmacéuticos
-                                <select>
-                                    <option selected="selected" disabled="disabled">Selecciona un colegio oficial</option>
-                                </select>
-                            </label>
+                            <p>Colegio: <span t-esc="persona.collegiate_number"></span></p>
                         </div>
-                        <div>
-                            <label>Estado
-                                <select>
-                                    <option selected="selected" disabled="disabled">Selecciona un estado</option>
-                                </select>
-                            </label>
-                        </div>
-                        <div>
-                            <label>Fecha
-                                <input type="date" name="fecha"/>
-                            </label>
-                        </div>
-                        <div><button type="button" class="btn-submit">BUSCAR</button></div>
-                        <table>
+                        <table class="table table-striped">
                             <caption>Resultado de la búsqueda</caption>
                             <thead>
                                 <tr>
@@ -58,12 +46,11 @@
                                     <th>Fecha Inicio</th>
                                     <th>Fecha Final</th>
                                     <th>
-                                        <input type="button" class="btn-submit" id="btn-new"/>
+                                        <button type="button" class="btn" id="btn-new">Nuevo</button>
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- for cargar lista -->
                                 <tr>
                                     <td>1</td>
                                     <td>Presidente</td>
@@ -74,8 +61,30 @@
                                     <td>01/01/2021</td>
                                     <td>01/01/2023</td>
                                     <td>
-                                        <i class="fas fa-pencil-alt"/>
-                                        <i class="fas fa-trash-alt"/>
+                                        <div class="cont-img">
+                                            <img class="edit"/>
+                                        </div>
+                                        <div class="cont-img">
+                                            <img class="delete"/>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Vice Presidente</td>
+                                    <td>22222222A</td>
+                                    <td>Nombre</td>
+                                    <td>Apellidos</td>
+                                    <td>No</td>
+                                    <td>01/01/2021</td>
+                                    <td>01/01/2023</td>
+                                    <td>
+                                        <div class="cont-img">
+                                            <img class="edit" href="/static/src/img/edit.png"/>
+                                        </div>
+                                        <div class="cont-img">
+                                            <img class="delete" href="/static/src/img/delete.png"/>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
