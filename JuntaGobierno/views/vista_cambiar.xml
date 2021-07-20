@@ -7,6 +7,7 @@
             <field name="model">cargos.colegio</field>
             <field name="arch" type="xml">
                 <tree string = "Cargos Junta de Gobierno">
+                    <field name = "x_seq"/>
                     <field name = "x_cargos_jg"/>
                     <field name = "x_dni"/>
                     <field name = "x_nombre"/>
@@ -24,6 +25,11 @@
             <field name="arch" type="xml">
                 <form>
                     <sheet>
+                        <div class="oe_title">
+                        <h1>
+                            <field name="x_seq" readonly="1"/>
+                        </h1>
+                    </div>
                         <group>
                             <group>
                                 <field name = "x_cargos_jg"/>
@@ -38,7 +44,7 @@
                             </group>
                         </group>
                     </sheet>
-                    <div class="oe_chatter">
+                    <div class="oe_chatter"><!-- Panel de actividad -->
                         <field name="message_follower_ids" widget="mail_followers"/>
                         <field name="activity_ids" widget="mail_activity"/>
                         <field name="message_ids" widget="mail_thread" options="{'post_refresh': 'recipients'}"/>
@@ -78,6 +84,6 @@
         </record>
 
         <menuitem id="gestion_junta_gobierno_root" name="Gestion Junta de Gobierno" sequence="10"/>
-        <menuitem id="cargos_junta_gobierno" name="Cargos" parent="gestion_junta_gobierno_root" action="action_gestion_junta_gobierno"/>
+        <menuitem id="gestion_junta_gobierno" name="Junta Gobierno" parent="gestion_junta_gobierno_root" action="action_gestion_junta_gobierno"/>
     </data>
 </odoo>

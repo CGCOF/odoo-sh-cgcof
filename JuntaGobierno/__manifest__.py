@@ -25,5 +25,6 @@
         "security/ir.model.access.csv",
         "views/vista_cambiar.xml",
         "views/sale.xml",
+        "data/sequence.xml",
     ],
 }
