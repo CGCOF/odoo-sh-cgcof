@@ -8,7 +8,7 @@
 section{
     margin: 0 5%;
 }
-h2 {
+#cont-inicio h2, #cont-new h2, #cont-edit h2 {
     font-size: 2.5em;
     line-height: 1.3em;
     padding-bottom: 5px;
@@ -22,9 +22,11 @@ h2 {
     margin: 0 5%;
 }
 .cont-img img{
-    width: 100%;
+    width: 50%;
+    margin: auto;
+    display: block;
 }
-.btn{
+.btn-junta{
     background: #93C462;
     font-size: 0.875em;
     color: white;
@@ -38,10 +40,10 @@ h2 {
     max-width: 140px;
     width: 100%;
     margin: 0 0 0 auto;
-    display: block;
+    display: inline-block;
     position: relative;
 }
-.btn:hover{
+.btn-junta:hover{
     color: white;
     background: #77A647;
 }
@@ -78,4 +80,8 @@ p.linea{
 }
 section input{
     display: block;
+}
+#cont-inicio .delete2{
+    border: 1px solid red;
+    background-color: rgb(255, 0, 0);
 }

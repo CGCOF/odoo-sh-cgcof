@@ -38,11 +38,11 @@
                                     <th>DNI</th>
                                     <th>Nombre</th>
                                     <th>Apellidos</th>
-                                    <th>ERP</th>
+                                    <th>WEB</th>
                                     <th>Fecha Inicio</th>
                                     <th>Fecha Final</th>
                                     <th>
-                                        <button type="button" class="btn" id="btn-new">Nuevo</button>
+                                        <button type="button" class="btn-junta" id="btn-new">Nuevo</button>
                                     </th>
                                 </tr>
                             </thead>
@@ -52,8 +52,8 @@
                                     <td class="cargo">Presidente</td>
                                     <td class="dni">11111111A</td>
                                     <td class="nombre">Nombre</td>
-                                    <td class="apellido">Apellidos</td>
-                                    <td class="erp">Sí</td>
+                                    <td class="apellidos">Apellidos</td>
+                                    <td class="web">Sí</td>
                                     <td class="fecha_inicio">01/01/2021</td>
                                     <td class="fecha_final">01/02/2023</td>
                                     <td>
@@ -70,8 +70,8 @@
                                     <td class="cargo">Vice Presidente</td>
                                     <td class="dni">22222A</td>
                                     <td class="nombre">Nombre</td>
-                                    <td class="apellido">Apellidos</td>
-                                    <td class="erp">No</td>
+                                    <td class="apellidos">Apellidos</td>
+                                    <td class="web">No</td>
                                     <td class="fecha_inicio">01/02/2021</td>
                                     <td class="fecha_final">01/03/2023</td>
                                     <td>
@@ -113,16 +113,16 @@
                         <label>Fecha Final <input type="date" name="fecha_final"/></label>
                     </div>
                     <div class="form-group">
-                        <p>Cuenta con acceso al ERP</p>
-                        <label>Sí <input type="radio" name="erp" value="Sí"/></label>
-                        <label>No <input type="radio" name="erp" value="No"/></label>
+                        <p>Cuenta con acceso WEB</p>
+                        <label>Sí <input type="radio" name="web" value="Sí"/></label>
+                        <label>No <input type="radio" name="web" value="No"/></label>
                     </div>
                     <div class="form-group">
                         <label>Orden <input type="number" name="orden"/></label>
                         <small class="form-text text-muted">Número de posición en la lista.</small>
                     </div>
-                    <button type="button" class="btn" id="cancela-edit">Cancelar</button>
-                    <button type="button" class="btn" id="guarda-edit">Guardar</button>
+                    <button type="button" class="btn-junta" id="cancela-edit">Cancelar</button>
+                    <button type="button" class="btn-junta" id="guarda-edit">Guardar</button>
                 </section>
                 
                 <section id="cont-new">
@@ -150,16 +150,16 @@
                         <label>Fecha Final <input type="date" name="fecha_final"/></label>
                     </div>
                     <div class="form-group">
-                        <p>Cuenta con acceso al ERP</p>
-                        <label>Sí <input type="radio" name="erp"/></label>
-                        <label>No <input type="radio" name="erp"/></label>
+                        <p>Cuenta con acceso WEB</p>
+                        <label>Sí <input type="radio" name="web"/></label>
+                        <label>No <input type="radio" name="web"/></label>
                     </div>
                     <div class="form-group">
                         <label>Orden <input type="number" name="orden"/></label>
                         <small class="form-text text-muted">Número de posición en la lista.</small>
                     </div>
-                    <button type="button" class="btn" id="cancela-new">Cancelar</button>
-                    <button type="button" class="btn" id="guarda-new">Guardar</button>
+                    <button type="button" class="btn-junta" id="cancela-new">Cancelar</button>
+                    <button type="button" class="btn-junta" id="guarda-new">Guardar</button>
                 </section>
             </t>
         </template>
