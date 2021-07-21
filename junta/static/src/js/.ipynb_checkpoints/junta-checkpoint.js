@@ -18,7 +18,32 @@ $(document).on("click","#btn-new",function(){
     var dni = $("#cont-new input[name='dni']").val("");
     var fecha_inicio = $("#cont-new input[name='fecha_inicio']").val("");
     var fecha_final = $("#cont-new input[name='fecha_final']").val("");
-    var orden = $("#cont-new input[name='orden']").val("");
+    var ultimo_orden = $("table tr:last .orden").text();
+    $("#cont-new input[name='orden']").val(ultimo_orden);
+    $("#cont-new input[name='dni']").focus();
+});
+$(document).on("focusout","#cont-new input[name='dni']",function(){
+    if($("#cont-new input[name='dni']").val() === ""){
+        $("#cont-new input[name='dni']").focus();
+    } else {
+        var dni = $("#cont-new input[name='dni']").val();
+        $.ajax({
+            type: "post",
+            contentType: "application/json"
+            async: true,
+            data: {
+                dni: dni
+            },
+            url: "/busca_dni",
+            success: function(respuesta){
+                if (respuesta.array.length !== 0 && respuesta.array[0].dato.nombre !== ""){
+                    var nombre = respuesta.array[0].dato.nombre;
+                    var apellidos = respuesta.array[0].dato.apellidos;
+                    var dni = respuesta.array[0].dato.dni;
+                }
+            }
+        });
+    }
 });
 $(document).on("click",".delete",function(){
     $(this).addClass("delete2");
@@ -56,6 +81,25 @@ $(document).on("click","#guarda-new",function(){
     var fecha_final = $("#cont-new input[name='fecha_final']").val();
     var web = $("#cont-new input[name='web']").val();
     var orden = $("#cont-new input[name='orden']").val();
+    
+    $.ajax({
+        type: "post",
+        async: true,
+        data: {
+            cargo: cargo,
+            nombre: nombre,
+            apellidos: apellidos,
+            dni: dni,
+            fecha_inicio: fecha_inicio,
+            fecha_final: fecha_final,
+            web: web,
+            orden: orden
+        },
+        url: "/guarda_new",
+        success: function(respuesta){
+            alert(respuesta);
+        }
+    });
 });
 $(document).on("click","#guarda-edit",function(){
     var cargo = $("#cont-edit input[name='cargo']").val();

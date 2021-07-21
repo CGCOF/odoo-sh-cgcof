@@ -85,3 +85,7 @@ section input{
     border: 1px solid red;
     background-color: rgb(255, 0, 0);
 }
+#cont-new input[name='dni']:focus{
+    background-color: #93c4625c;
+    text-align: center;
+}
